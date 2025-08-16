@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Layanan Pemesanan Kopi</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: url('https://images.unsplash.com/photo-1495474472287-4d71bcdd2085') no-repeat center center fixed;
+      background-size: cover;
+      color: #fff;
+      text-align: center;
+      animation: fadeIn 2s ease-in-out;
+    }
+    header {background: rgba(0,0,0,0.6); padding:15px; position:sticky; top:0;}
+    nav a {color:#fff; text-decoration:none; margin:0 15px; font-weight:bold;}
+    nav a:hover {color:#f4d03f;}
+    section {padding: 50px; background: rgba(0,0,0,0.5); margin: 50px; border-radius: 10px;}
+    h1 {font-size: 40px;}
+    form {display: flex; flex-direction: column; width: 300px; margin: auto; text-align:left;}
+    label {margin: 10px 0 5px;}
+    input, select, textarea {padding:10px; border:none; border-radius:5px;}
+    button {margin-top:20px; padding:10px; background:#f4d03f; border:none; border-radius:5px; cursor:pointer; font-weight:bold;}
+    button:hover {background:#d4ac0d;}
+    @keyframes fadeIn {from{opacity:0;} to{opacity:1;}}
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="tentang.html">Tentang</a>
+      <a href="layanan.html">Layanan</a>
+      <a href="kontak.html">Kontak</a>
+    </nav>
+  </header>
+  <section>
+    <h1>Form Pemesanan Kopi</h1>
+    <form>
+      <label>Nama Pemesan</label>
+      <input type="text" required>
+      <label>Nomor WhatsApp</label>
+      <input type="tel" required>
+      <label>Jenis Kopi</label>
+      <select>
+        <option>Espresso</option>
+        <option>Americano</option>
+        <option>Cappuccino</option>
+        <option>Latte</option>
+        <option>Mocha</option>
+        <option>Kopi Tubruk</option>
+      </select>
+      <label>Alamat</label>
+      <textarea rows="3"></textarea>
+      <label>Metode Pembayaran</label>
+      <select>
+        <option>Transfer Bank</option>
+        <option>COD</option>
+        <option>E-Wallet</option>
+      </select>
+      <label>Rating Layanan (1-5)</label>
+      <input type="number" min="1" max="5">
+      <button type="submit">Pesan Sekarang</button>
+    </form>
+  </section>
+</body>
+</html>
